@@ -4,6 +4,14 @@ body {
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Noto Sans TC', sans-serif;
+	background: #fefefe;
+	text-rendering: optimizeLegibility;
+}
+
+h1 {
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+	border-bottom: .2rem solid #080808;
 }
 
 .navbar-color {
@@ -24,12 +32,18 @@ body {
 }
 
 .margin-block {
+	margin: 2rem 0rem;
+}
+
+.margin-items {
 	margin: 1rem 0rem;
 }
 
 .content-wrap {
-	word-wrap: break-word;
-	word-break: keep-all;
+	font-size: 1.1rem;
+	line-height: 2rem;
+	overflow-wrap: break-word;
+	word-break: break-word;
 }
 
 .footer-bg {
@@ -48,7 +62,7 @@ body {
 
 .footer-padding-bottom {
 	color: #fafafa;
-	padding: 0rem 0rem 1rem 0rem;
+	padding: 1rem 0rem;
 }
 
 .flexbox {
@@ -77,4 +91,8 @@ body {
 	padding-left: .5rem;
 	font-size: 1rem;
 	line-height: 2;
+}
+
+.copyright {
+	font-size: .8rem;
 }
