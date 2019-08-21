@@ -7,7 +7,8 @@ body {
 }
 
 .navbar-color {
-	background: rgba(10, 10, 10, 0.5);
+	background: #fff;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .1);
 }
 
 .nav-item {
@@ -26,31 +27,43 @@ body {
 	margin: 1rem 0rem;
 }
 
-.footer-img {
-	width: 25rem;
-}
-
-#footer1 {
-	color: #fafafa;
-	padding: 1rem 0rem 1rem 0rem;
+.content-wrap {
+	word-wrap: break-word;
+	word-break: keep-all;
 }
 
 .footer-bg {
 	background: rgba(10, 10, 10, 0.5) url('../img/footer-bg.png') no-repeat left bottom;
 }
 
-#contact1 {
-	margin-left: 2rem;
+.footer-padding {
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-#footer2 {
+.footer-padding-top {
+	color: #fafafa;
+	padding: 1rem 0rem 0rem 0rem;
+}
+
+.footer-padding-bottom {
 	color: #fafafa;
 	padding: 0rem 0rem 1rem 0rem;
 }
 
-.footer-padding {
-	padding-left: 10px;
-	padding-right: 10px;
+.flexbox {
+    display:  flex;
+    align-items: center;
+    justify-content:  center;
+}
+
+.footer-logo {
+	width: 100%;
+}
+
+.pull-left {
+	display: inline-block;
+	vertical-align: top;
 }
 
 .info-icon {
@@ -64,16 +77,4 @@ body {
 	padding-left: .5rem;
 	font-size: 1rem;
 	line-height: 2;
-}
-
-.pull-left {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.flexbox {
-    max-width:  100%;
-    display:  flex;
-    align-items: center;
-    justify-content:  center;
 }
