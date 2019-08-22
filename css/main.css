@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:400);
 
 body {
+	color: #333;
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Noto Sans TC', sans-serif;
@@ -8,10 +9,18 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
 	padding-bottom: 1rem;
 	margin-bottom: 1rem;
+}
+
+h1 {
 	border-bottom: .2rem solid #080808;
+	text-align: center;
+}
+
+h2 {
+	color: #17a2b8;
 }
 
 .navbar-color {
@@ -95,4 +104,15 @@ h1 {
 
 .copyright {
 	font-size: .8rem;
+}
+
+.publication {
+	font-size: .9rem;
+	line-height: 2rem;
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+
+.publication-items {
+	margin-top: 1rem;
 }
