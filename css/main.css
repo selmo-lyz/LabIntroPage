@@ -75,12 +75,12 @@ h2 {
 }
 
 .flexbox {
-    display:  flex;
+    display: flex;
     align-items: center;
     justify-content:  center;
 }
 
-.footer-logo {
+.w-100 {
 	width: 100%;
 }
 
