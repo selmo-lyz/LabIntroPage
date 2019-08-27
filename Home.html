@@ -1,29 +1,28 @@
 <!doctype html>
 
 <html lang="en">
-
   <head>
-	<!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-	<!-- main CSS -->
-	<link rel="stylesheet" href="./css/main.css" type="text/css">
-
-	<!-- Title on the tab -->
-	<title>XXXX OOOO Lab</title>
+    <!-- Font CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  	<!-- main CSS -->
+  	<link rel="stylesheet" href="./css/main.css" type="text/css">
+  	<title>Complex Fluid Theory Laboratory</title>
 
   </head>
-
   <body>
+    
+    <!-- 因為 fixed-top 的 NavBar 會遮到最上方的內容，故需要將上方留白 -->
+    <div class="topper"></div>
 
+    <!-- NavBar -->
     <header>
-
-      <nav class="navbar navbar-expand-lg navbar-light navbar-color">
-
+      <nav class="navbar navbar-expand-lg navbar-light navbar-color fixed-top">
     		<a class="navbar-brand">
           <img class="d-block" width="250" height="" src="./img/4.png">
         </a>
@@ -33,9 +32,7 @@
         </button>
 
         <div id="navbarNav" class="collapse navbar-collapse">
-
           <ul class="navbar-nav justify-content-center d-flex fill-flex">
-
       			<li class="nav-item">
               <a class="nav-link" href="Home.html">Home</a>
             </li>
@@ -61,16 +58,12 @@
             </li>
 
           </ul>
-
         </div>
-
       </nav>
-
     </header>
 
   	<!-- Carousel -->
     <div class="container-fluid margin-block">
-
   		<div id="carouselExampleIndicators" class="carousel slide carousel-size" data-ride="carousel">
   			<ol class="carousel-indicators">
   				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -78,8 +71,8 @@
   				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   			</ol>
 
+				<!--嵌入的圖片需裁切至特定大小-->
   			<div class="carousel-inner carousel-size">
-  				<!--嵌入的圖片需裁切至特定大小-->
   				<div class="carousel-item active">
   					<img src="./img/1.jpg" class="d-block w-100 carousel-size" alt="...">
   					<div class="carousel-caption d-none d-md-block">
@@ -114,14 +107,11 @@
   				<span class="carousel-control-next-icon" aria-hidden="true"></span>
   				<span class="sr-only">Next</span>
   			</a>
-
   		</div>
-
     </div>
 
     <!-- table -->
     <div class="container-fluid margin-block">
-
   		<div class="container">
 
 				<h1 class="text-uppercase">
@@ -131,7 +121,6 @@
 				<div class="table-responsive-md margin-items">
 					<table class="table table-striped">
 						<tbody>
-
 							<tr>
 								<th scope="row">
 									20190809
@@ -164,104 +153,95 @@
 						</tbody>
 					</table>
 				</div>
-
 			</div>
-
     </div>
 
     <!-- article -->
   	<div class="container-fluid margin-block">
-
   		<div class="container">
 
-  				<h1 class="text-uppercase">
-  					Research Topic
-  				</h1>
+				<h1 class="text-uppercase">
+					Research Topic
+				</h1>
 
-          <article class="content-wrap">
-  					Theoretical modeling provides insights into the fundamentals of many complex systems ranging from organic‒inorganic hybrid materials to biological fluids.
-  					A suitably chosen model description that captures the essential physics of the system in conjunction with efficient multiscale modeling techniques that incorporates the physical laws relevant to the scales of interest can guide the materials design for a variety of innovations.
-  					Making use of classical density-functional theory, generalized Langevin dynamics, and continuum or molecular modeling,
-  					my group will answer basic questions in order to gain both qualitative and quantitative understanding regarding the equilibrium and dynamical properties of complex systems in engineering nanomedicine and materials science applications.
-          </article>
-
-
+        <article class="content-wrap">
+					Theoretical modeling provides insights into the fundamentals of many complex systems ranging from organic‒inorganic hybrid materials to biological fluids.
+					A suitably chosen model description that captures the essential physics of the system in conjunction with efficient multiscale modeling techniques that incorporates the physical laws relevant to the scales of interest can guide the materials design for a variety of innovations.
+					Making use of classical density-functional theory, generalized Langevin dynamics, and continuum or molecular modeling,
+					my group will answer basic questions in order to gain both qualitative and quantitative understanding regarding the equilibrium and dynamical properties of complex systems in engineering nanomedicine and materials science applications.
+        </article>
   		</div>
-
   	</div>
 
     <!-- card -->
   	<div class="container-fluid margin-block">
-
   		<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-sm-8 col-lg margin-items">
+						<div class="card border-0">
+							<div class="card-body">
+    						<h2 class="text-uppercase">
+    							Topic 1
+    						</h2>
 
-  				<div class="row justify-content-center">
+								<p class="content-wrap">
+									Directed transport of functionalized nanoparticles for systematic materials processing and vascular targeted drug delivery.
+								</p>
 
-  					<div class="col-sm-8 col-lg margin-items">
+								<a href="#" class="btn btn-info">read more</a>
+							</div>
+						</div>
+					</div>
 
-  						<div class="card border-0">
-  							<div class="card-body">
-      						<h2 class="text-uppercase">
-      							Topic 1
-      						</h2>
+					<div class="col-sm-8 col-lg margin-items">
+						<div class="card border-0">
+							<div class="card-body">
+    						<h2 class="text-uppercase">
+    							Topic 2
+    						</h2>
 
-  								<p class="content-wrap">
-  									Directed transport of functionalized nanoparticles for systematic materials processing and vascular targeted drug delivery.
-  								</p>
+								<p class="content-wrap">
+									Controlling nanoparticle trafficking in the extracellular matrix and polymer networks.
+								</p>
 
-  								<a href="#" class="btn btn-info">read more</a>
+								<a href="#" class="btn btn-info">read more</a>
+							</div>
+						</div>
+					</div>
 
-  							</div>
-  						</div>
-  					</div>
+					<div class="col-sm-8 col-lg margin-items">
+						<div class="card border-0">
+							<div class="card-body">
+    						<h2 class="text-uppercase">
+    							Topic 3
+    						</h2>
 
-  					<div class="col-sm-8 col-lg margin-items">
+								<p class="content-wrap">
+									Predicting tunable, functionalized self-assemblies for high-efficiency advanced materials design and tissue engineering.
+								</p>
 
-  						<div class="card border-0">
-  							<div class="card-body">
-      						<h2 class="text-uppercase">
-      							Topic 2
-      						</h2>
+								<a href="#" class="btn btn-info">read more</a>
+							</div>
+						</div>
+					</div>
 
-  								<p class="content-wrap">
-  									Controlling nanoparticle trafficking in the extracellular matrix and polymer networks.
-  								</p>
-
-  								<a href="#" class="btn btn-info">read more</a>
-
-  							</div>
-  						</div>
-  					</div>
-
-  					<div class="col-sm-8 col-lg margin-items">
-
-  						<div class="card border-0">
-  							<div class="card-body">
-      						<h2 class="text-uppercase">
-      							Topic 3
-      						</h2>
-
-  								<p class="content-wrap">
-  									Predicting tunable, functionalized self-assemblies for high-efficiency advanced materials design and tissue engineering.
-  								</p>
-
-  								<a href="#" class="btn btn-info">read more</a>
-
-  							</div>
-  						</div>
-  					</div>
-
-  				</div>
-
+				</div>
   		</div>
-
   	</div>
+
+    <!-- "go to top" button-->
+    <div class="fixed-footer">
+      <div class="jumptool">
+        <button class="gotop" type="button" name="button" onclick="window.scroll({ top: 0, left: 0, behavior: 'smooth'});">
+          <i class="material-icons"></i>
+        </button>
+      </div>
+    </div>
 
   	<!-- footer -->
     <!-- 若只用 footer 沒有 container-fluid 將會無法水平填滿視窗 -->
     <footer class="container-fluid footer-bg">
   		<div class="footer-container">
-
   			<!-- footer 1 -->
   			<div class="row justify-content-end footer-padding-top">
 
@@ -311,7 +291,7 @@
 
   			<!-- footer 2 -->
   			<div class="text-center footer-padding-bottom copyright">
-  				Copyright © 2019 XXXX OOOO Lab. All rights reserved
+  				Copyright © 2019 Complex Fluid Theory Laboratory. All rights reserved
   			</div>
   		</div>
     </footer>

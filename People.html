@@ -1,29 +1,28 @@
 <!doctype html>
 
 <html lang="en">
-
   <head>
-	<!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-	<!-- main CSS -->
-	<link rel="stylesheet" href="./css/main.css" type="text/css">
-
-	<!-- Title on the tab -->
-	<title>XXXX OOOO Lab</title>
+    <!-- Font CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  	<!-- main CSS -->
+  	<link rel="stylesheet" href="./css/main.css" type="text/css">
+  	<title>Complex Fluid Theory Laboratory</title>
 
   </head>
-
   <body>
 
+    <!-- 因為 fixed-top 的 NavBar 會遮到最上方的內容，故需要將上方留白 -->
+    <div class="topper"></div>
+
+    <!-- NavBar -->
     <header>
-
-      <nav class="navbar navbar-expand-lg navbar-light navbar-color">
-
+      <nav class="navbar navbar-expand-lg navbar-light navbar-color fixed-top">
     		<a class="navbar-brand">
           <img class="d-block" width="250" height="" src="./img/4.png">
         </a>
@@ -33,9 +32,7 @@
         </button>
 
         <div id="navbarNav" class="collapse navbar-collapse">
-
           <ul class="navbar-nav justify-content-center d-flex fill-flex">
-
       			<li class="nav-item">
               <a class="nav-link" href="Home.html">Home</a>
             </li>
@@ -61,25 +58,22 @@
             </li>
 
           </ul>
-
         </div>
-
       </nav>
-
     </header>
 
   	<div class="container-fluid margin-block">
       <div class="container">
 
-        <h1 class="text-uppercase">People</h1>
+        <h1 class="text-uppercase">
+          People
+        </h1>
 
         <h2>Principal Investigator</h2>
 
         <div class="row justify-content-between">
-          <div class="col-xs-6 col-md-5 col-lg-5 col-xl-4">
-
+          <div class="col-xs-6 col-md-5 col-lg-5 col-xl-4 align-self-center">
             <img src="./img/people/professor.jpg" class="w-100" alt="professor picture">
-
           </div>
           <div class="col-xs-6 col-md-7 col-lg-7 col-xl-6">
 
@@ -90,7 +84,7 @@
             <p>National Taiwan University</p>
             <p></p>
             <p>ORCID:0000-0000-0000-0000</p>
-            <h5>Google Scholar:</h5>
+            <p>Google Scholar:</p>
             <h5>Education:</h5>
             <p>B.S. Ch.E., National Taiwan University, Taiwan 2004</p>
             <p>M.S. Ch.E., National Taiwan University, Taiwan 2006</p>
@@ -104,140 +98,283 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid margin-block">
+      <div class="container">
 
-      <h2 class="text-uppercase">Graduate Students</h2>
+        <h2>Graduate Students</h2>
 
-      <div class="row justify-content-center">
-        <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3 margin-items">
-					<div class="card">
-						<div class="card-body">
+        <div class="flex">
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
+                123456789111111@gmail.com
+              </span>
+            </div>
+          </div>
 
-              <img src="./img/people/user.svg" class="w-100" alt="stu">
-
-  						<h3 class="text-uppercase">
-  							Student Name
-  						</h3>
-
-							<span class="content-wrap">
-                <h6>Experience:</h6>
-                B.S. Ch.E., National Taiwan University, Taiwan 2004
-                <h6>Email:</h6>
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
                 yadon@pokemon.com
-							</span>
+              </span>
+            </div>
+          </div>
 
-						</div>
-					</div>
-        </div>
-        <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3 margin-items">
-					<div class="card">
-						<div class="card-body">
-
-              <img src="./img/people/person.svg" class="w-100" alt="stu">
-
-  						<h3 class="text-uppercase">
-  							Student Name
-  						</h3>
-
-							<span class="content-wrap">
-                <h6>Experience:</h6>
-                B.S. Ch.E., National Taiwan University, Taiwan 2004
-                <h6>Email:</h6>
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
                 yadon@pokemon.com
-							</span>
+              </span>
+            </div>
+          </div>
 
-						</div>
-					</div>
-        </div>
-        <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3 margin-items">
-					<div class="card">
-						<div class="card-body">
-
-              <img src="./img/people/happy-face.svg" class="w-100" alt="stu">
-
-  						<h3 class="text-uppercase">
-  							Student Name
-  						</h3>
-
-							<span class="content-wrap">
-                <h6>Experience:</h6>
-                B.S. Ch.E., National Taiwan University, Taiwan 2004
-                <h6>Email:</h6>
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
                 yadon@pokemon.com
-							</span>
+              </span>
+            </div>
+          </div>
 
-						</div>
-					</div>
-        </div>
-        <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3 margin-items">
-					<div class="card">
-						<div class="card-body">
-
-              <img src="./img/people/accessibility-human.svg" class="w-100" alt="stu">
-
-  						<h3 class="text-uppercase">
-  							Student Name
-  						</h3>
-
-							<span class="content-wrap">
-                <h6>Experience:</h6>
-                B.S. Ch.E., National Taiwan University, Taiwan 2004
-                <h6>Email:</h6>
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
                 yadon@pokemon.com
-							</span>
+              </span>
+            </div>
+          </div>
 
-						</div>
-					</div>
-        </div>
-        <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3 margin-items">
-					<div class="card">
-						<div class="card-body">
-
-              <img src="./img/people/person.svg" class="w-100" alt="stu">
-
-  						<h3 class="text-uppercase">
-  							Student Name
-  						</h3>
-
-							<span class="content-wrap">
-                <h6>Experience:</h6>
-                B.S. Ch.E., National Taiwan University, Taiwan 2004
-                <h6>Email:</h6>
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
                 yadon@pokemon.com
-							</span>
+              </span>
+            </div>
+          </div>
 
-						</div>
-					</div>
-        </div>
-        <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3 margin-items">
-					<div class="card">
-						<div class="card-body">
-
-              <img src="./img/people/person.svg" class="w-100" alt="stu">
-
-  						<h3 class="text-uppercase">
-  							Student Name
-  						</h3>
-
-							<span class="content-wrap">
-                <h6>Experience:</h6>
-                B.S. Ch.E., National Taiwan University, Taiwan 2004
-                <h6>Email:</h6>
-                yadon@pokemon.com
-							</span>
-
-						</div>
-					</div>
         </div>
       </div>
+    </div>
 
+    <div class="container-fluid margin-block">
+      <div class="container">
+
+        <h2>Undergraduate Students</h2>
+
+        <div class="flex">
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
+                yadon@pokemon.com
+              </span>
+            </div>
+          </div>
+
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
+                yadon@pokemon.com
+              </span>
+            </div>
+          </div>
+
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
+                yadon@pokemon.com
+              </span>
+            </div>
+          </div>
+
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
+                yadon@pokemon.com
+              </span>
+            </div>
+          </div>
+
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
+                yadon@pokemon.com
+              </span>
+            </div>
+          </div>
+
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
+                yadon@pokemon.com
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid margin-block">
+      <div class="container">
+
+        <h2>Alumni</h2>
+
+        <div class="flex">
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
+                yadon@pokemon.com
+              </span>
+            </div>
+          </div>
+
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
+                yadon@pokemon.com
+              </span>
+            </div>
+          </div>
+
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
+                yadon@pokemon.com
+              </span>
+            </div>
+          </div>
+
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
+                yadon@pokemon.com
+              </span>
+            </div>
+          </div>
+
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
+                yadon@pokemon.com
+              </span>
+            </div>
+          </div>
+
+          <div class="flex-card">
+            <div class="profile-pic">
+              <img src="./img/people/user.svg" alt="stu">
+            </div>
+            <div class="profile-info content-wrap">
+              <span class="">
+                <h5><a href="Home.html">Student Name</a></h5>
+                <p>Email:</p>
+                yadon@pokemon.com
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- "go to top" button-->
+    <div class="fixed-footer">
+      <div class="jumptool">
+        <button class="gotop" type="button" name="button" onclick="window.scroll({ top: 0, left: 0, behavior: 'smooth'});">
+          <i class="material-icons"></i>
+        </button>
+      </div>
     </div>
 
   	<!-- footer -->
     <!-- 若只用 footer 沒有 container-fluid 將會無法水平填滿視窗 -->
     <footer class="container-fluid footer-bg">
   		<div class="footer-container">
-
   			<!-- footer 1 -->
   			<div class="row justify-content-end footer-padding-top">
 
@@ -287,7 +424,7 @@
 
   			<!-- footer 2 -->
   			<div class="text-center footer-padding-bottom copyright">
-  				Copyright © 2019 XXXX OOOO Lab. All rights reserved
+  				Copyright © 2019 Complex Fluid Theory Laboratory. All rights reserved
   			</div>
   		</div>
     </footer>
@@ -299,5 +436,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
   </body>
-
 </html>

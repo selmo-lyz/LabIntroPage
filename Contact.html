@@ -1,29 +1,28 @@
 <!doctype html>
 
 <html lang="en">
-
   <head>
-	<!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-	<!-- main CSS -->
-	<link rel="stylesheet" href="./css/main.css" type="text/css">
-
-	<!-- Title on the tab -->
-	<title>XXXX OOOO Lab</title>
+    <!-- Font CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  	<!-- main CSS -->
+  	<link rel="stylesheet" href="./css/main.css" type="text/css">
+  	<title>Complex Fluid Theory Laboratory</title>
 
   </head>
-
   <body>
+    
+    <!-- 因為 fixed-top 的 NavBar 會遮到最上方的內容，故需要將上方留白 -->
+    <div class="topper"></div>
 
+    <!-- NavBar -->
     <header>
-
-      <nav class="navbar navbar-expand-lg navbar-light navbar-color">
-
+      <nav class="navbar navbar-expand-lg navbar-light navbar-color fixed-top">
     		<a class="navbar-brand">
           <img class="d-block" width="250" height="" src="./img/4.png">
         </a>
@@ -33,9 +32,7 @@
         </button>
 
         <div id="navbarNav" class="collapse navbar-collapse">
-
           <ul class="navbar-nav justify-content-center d-flex fill-flex">
-
       			<li class="nav-item">
               <a class="nav-link" href="Home.html">Home</a>
             </li>
@@ -61,23 +58,24 @@
             </li>
 
           </ul>
-
         </div>
-
       </nav>
-
     </header>
 
   	<div class="container-fluid margin-block">
       <div class="container">
+
   			<h1 class="text-uppercase">
           Contact
         </h1>
+
         <div class="row justify-content-around">
           <div class="col-xs-6 col-md-5 col-lg-5 col-xl-4">
+
     				<h2>
               Prof. Hsiu-Yu Yu
     				</h2>
+
   					<span class="content-wrap">
               <h5>Email:</h5>
               hsiuyuyu@ntu.edu.tw
@@ -91,9 +89,11 @@
               No. 1, Sec. 4, Roosevelt Rd.
               Taipei 10617, TaiwanfR.O.C.)
             </span>
+
     				<h2>
               Laboratory
     				</h2>
+
   					<span class="content-wrap">
               <h5>Lab Phone:</h5>
               +886-2-3366-3054
@@ -104,6 +104,7 @@
               Taipei 10617, Taiwan(R.O.C-)
             </span>
           </div>
+
           <div class="col-xs-6 col-md-7 col-lg-7 col-xl-6 margin-items">
             <!--Google map-->
             <iframe
@@ -120,11 +121,19 @@
       </div>
     </div>
 
+    <!-- "go to top" button-->
+    <div class="fixed-footer">
+      <div class="jumptool">
+        <button class="gotop" type="button" name="button" onclick="window.scroll({ top: 0, left: 0, behavior: 'smooth'});">
+          <i class="material-icons"></i>
+        </button>
+      </div>
+    </div>
+
   	<!-- footer -->
     <!-- 若只用 footer 沒有 container-fluid 將會無法水平填滿視窗 -->
     <footer class="container-fluid footer-bg">
   		<div class="footer-container">
-
   			<!-- footer 1 -->
   			<div class="row justify-content-end footer-padding-top">
 
@@ -174,7 +183,7 @@
 
   			<!-- footer 2 -->
   			<div class="text-center footer-padding-bottom copyright">
-  				Copyright © 2019 XXXX OOOO Lab. All rights reserved
+  				Copyright © 2019 Complex Fluid Theory Laboratory. All rights reserved
   			</div>
   		</div>
     </footer>
